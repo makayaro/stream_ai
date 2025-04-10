@@ -1,0 +1,26 @@
+<annotation>
+	<folder>frames_20250401_172114</folder>
+	<filename>output_002.jpg</filename>
+	<path>C:\stream_ai\test_movies\frames_20250401_172114\output_002.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1920</width>
+		<height>1080</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>stream_tag</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1503</xmin>
+			<ymin>836</ymin>
+			<xmax>1845</xmax>
+			<ymax>1080</ymax>
+		</bndbox>
+	</object>
+</annotation>

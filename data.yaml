@@ -1,0 +1,5 @@
+path: C:/stream_ai/dataset
+train: images/train
+val: images/val
+names:
+  0: stream_tag
