@@ -154,5 +154,5 @@ subprocess.run([
     str(output_dir / "cropped_box_only.mp4")
 ])
 
-print("\nすべて完了しました！")
+print("\nすべて完了しました")
 print(f"出力フォルダ: {output_dir}")

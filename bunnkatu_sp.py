@@ -19,7 +19,7 @@ yt_dlp_path = Path("C:/stream_ai/yt-dlp.exe")  # yt-dlpのパスに変更
 ffmpeg_path = Path("C:/stream_ai/ffmpeg-2025-03-31-git-35c091f4b7-essentials_build/bin/ffmpeg.exe")  # ffmpegのパスに変更
 
 # 出力先のパス設定
-base_output_dir = Path("C:/stream_ai/test_movies")  # 出力先のフォルダを設定（例：C:/yt^dlp/test_movies）
+base_output_dir = Path("C:/stream_ai/test_movies")  # 出力先のフォルダを設定
 
 # --- 出力先ディレクトリが存在しない場合、作成 ---
 base_output_dir.mkdir(parents=True, exist_ok=True)
@@ -50,7 +50,7 @@ for url in urls:
     if downloaded_video.exists():
         print(f"動画がダウンロードされました: {downloaded_video}")
     else:
-        print("❌ ダウンロードに失敗しました。")
+        print("ダウンロードに失敗しました。")
         continue  # ダウンロード失敗した場合は次のURLに進む
 
     # ffmpegで動画からフレームを切り出し

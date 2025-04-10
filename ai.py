@@ -10,4 +10,4 @@ imgsz = 640
 model = YOLO(model_path)
 model.train(data=data_yaml, epochs=epochs, imgsz=imgsz)
 
-print("✅ 学習完了！")
+print("学習完了！")

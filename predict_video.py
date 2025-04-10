@@ -22,7 +22,7 @@ downloaded_base = output_dir / "test_video"
 short_video = output_dir / "test_video_short.mp4"
 
 # === ダウンロード ===
-print("📥 YouTube動画を高画質でダウンロード中...")
+print("YouTube動画を高画質でダウンロード中...")
 subprocess.run([
     str(yt_dlp_path),
     "-f", "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4",
@@ -36,7 +36,7 @@ merged_file = downloaded_base.with_suffix(".mp4")
 
 # === マージ処理（映像＋音声） ===
 if not merged_file.exists():
-    print("🎬 映像と音声を結合中...")
+    print("映像と音声を結合中...")
     subprocess.run([
         str(ffmpeg_path),
         "-y",
@@ -50,11 +50,11 @@ if not merged_file.exists():
 
 # === マージ失敗チェック ===
 if not merged_file.exists():
-    print(f"❌ マージに失敗しました: {merged_file}")
+    print(f"マージに失敗しました: {merged_file}")
     exit()
 
 # === 3分切り出し ===
-print("✂️ 3分間だけに切り出し中...")
+print("3分間だけに切り出し中...")
 subprocess.run([
     str(ffmpeg_path),
     "-y",
@@ -68,7 +68,7 @@ subprocess.run([
 ])
 
 # === YOLOv8 推論（配信者カメラ枠を検出） ===
-print("🔎 YOLOv8でカメラ枠を検出中...")
+print("YOLOv8でカメラ枠を検出中...")
 subprocess.run([
     "yolo",
     "task=detect",
@@ -168,4 +168,4 @@ while cap.isOpened():
 cap.release()
 out_video.release()
 
-print(f"✅ 分析完了！最終的な動画は {output_dir / 'final_output.mp4'} に保存されました。")
+print(f"分析完了！最終的な動画は {output_dir / 'final_output.mp4'} に保存されました。")
