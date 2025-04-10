@@ -9,3 +9,4 @@ ffmpeg-*/
 # Pythonが自動生成するゴミファイル
 __pycache__/
 *.pyc
+test*.py
