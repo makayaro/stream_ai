@@ -1,0 +1,11 @@
+# 実行結果やデータを無視する
+outputs/
+runs/
+test_movies/
+*.mp4
+*.exe
+ffmpeg-*/
+
+# Pythonが自動生成するゴミファイル
+__pycache__/
+*.pyc
