@@ -10,3 +10,4 @@ ffmpeg-*/
 __pycache__/
 *.pyc
 test*.py
+*.docx
