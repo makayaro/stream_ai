@@ -1,14 +1,8 @@
-# 実行結果やデータを無視する
-
 *.mp4
-
-
-# Pythonが自動生成するゴミファイル
 __pycache__/
 *.pyc
 test*.py
 *.docx
-# 不要ファイル・出力・外部ツールを無視
 test_movies/
 outputs/
 runs/
